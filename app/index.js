@@ -63,8 +63,6 @@ module.exports = generators.Base.extend({
     require('crypto').randomBytes(48, function(ex, buf) {
       this.appEnv.SESSION_SECRET = buf.toString('hex');
       done();
-
-      console.log('appEnv: ' + JSON.stringify(this.appEnv));
     }.bind(this));
   },
   writing: function() {
@@ -95,6 +93,6 @@ module.exports = generators.Base.extend({
     this.npmInstall();
   },
   end: function() {
-    console.log('Done! Simply type `node index.js`');
+    this.log('Done! Simply type `node index.js`');
   }
 });
