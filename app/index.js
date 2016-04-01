@@ -70,7 +70,7 @@ module.exports = generators.Base.extend({
   writing: function() {
     // Copy .env and add all variables
     this.fs.copyTpl(
-      this.templatePath('.env'),
+      this.templatePath('_env'),
       this.destinationPath('.env'),
       { appEnv: this.appEnv }
     );
@@ -84,7 +84,7 @@ module.exports = generators.Base.extend({
 
     // Copy remaining template files
     this.copy('index.js', 'index.js');
-    this.copy('.gitignore', '.gitignore');
+    this.copy('_gitignore', '.gitignore');
     this.directory('lib', 'lib');
     this.directory('log', 'log');
     this.directory('private', 'private');
