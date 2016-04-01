@@ -1,0 +1,24 @@
+{
+  "name": "generator-capcoauth-express",
+  "version": "1.0.0",
+  "description": "Yeoman generator for CapcOAuth and Node/Express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/arcreative/generator-capcoauth-express.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "capcoauth",
+    "node",
+    "express"
+  ],
+  "author": "Adam Robertson",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/arcreative/generator-capcoauth-express#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.22.5"
+  }
+}
