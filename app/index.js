@@ -17,7 +17,7 @@ module.exports = generators.Base.extend({
         type: 'input',
         name: 'APP_NAME',
         message: 'Your app name (no spaces, just dashes/underscores)',
-        'default': 'my-app'
+        'default': process.cwd().split('/').pop()
       }, promptHandler.bind(this, done, 'APP_NAME'));
     },
     appUrl: function() {
@@ -93,6 +93,6 @@ module.exports = generators.Base.extend({
     this.npmInstall();
   },
   end: function() {
-    this.log('Done! Simply type `node index.js`');
+    this.log('Done! Simply type `node index.js` to start your new application.');
   }
 });
