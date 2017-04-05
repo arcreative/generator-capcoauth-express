@@ -19,6 +19,6 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/arcreative/generator-capcoauth-express#readme",
   "dependencies": {
-    "yeoman-generator": "^0.22.5"
+    "yeoman-generator": "*"
   }
 }
